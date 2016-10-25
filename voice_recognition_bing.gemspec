@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = VoiceRecognitionBing::VERSION
   spec.authors       = ["Miguel Angel Fernandez"]
 
-  spec.summary       = %q{Client for the Voice Recognition service of Bing.}
-   # spec.homepage      = ""
+  spec.summary       = %q{Client for the Voice Recognition service of Bing}
+  spec.homepage      = "https://github.com/elmendalerenda/voice_recognition_bing"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -25,6 +25,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^(test|spec|features)/})
   end
   spec.bindir        = "exe"
+  spec.files         = Dir["lib/**/*.rb"]
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
