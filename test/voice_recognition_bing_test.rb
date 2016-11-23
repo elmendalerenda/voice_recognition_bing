@@ -55,7 +55,7 @@ class RecognizerTest < Minitest::Test
     end
     content = File.binread('./test/fixture/88.wav')
 
-    credentials = VoiceRecognitionBing::Authorization.credentials({subscription_key: client_id})
+    credentials = VoiceRecognitionBing::Authorization.credentials
     response = VoiceRecognitionBing::Service.recognize(content, credentials)
 
     assert_equal "ochenta y ocho", response

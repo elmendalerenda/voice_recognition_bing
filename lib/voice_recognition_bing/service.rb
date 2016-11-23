@@ -22,7 +22,7 @@ module VoiceRecognitionBing
     end
 
     def remote_service
-      @ms_service || MSService
+      @ms_service ||= MSService
     end
   end
 end
